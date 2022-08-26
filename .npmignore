@@ -4,12 +4,14 @@ package-lock.json
 renovate.json
 slither.json
 tsconfig.json
-*.eslintrc
-*.lintstagedrc
-*.prettierignore
-*.prettierrc
-*.solhint.json
-*.solhintignore
+.eslintrc
+.github/
+.husky/
+.lintstagedrc
+.prettierignore
+.prettierrc
+.solhint.json
+.solhintignore
 
 # Test contracts and files
 test/
