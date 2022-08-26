@@ -1,6 +1,5 @@
 name: NPM publish CD workflow
 
-# Trigger on the publish event of a release
 on:
   release:
     types: [published]
@@ -8,7 +7,6 @@ on:
 jobs:
   NPM-Publish:
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out code
         uses: actions/checkout@v3
@@ -33,26 +31,23 @@ jobs:
         run: npm ci
 
       - name: Set the publisher name
-      - run: git config --global user.name "GitHub CD bot"
+        run: git config --global user.name "GitHub CD bot"
 
       - name: Set the publisher email
-      - run: git config --global user.email "github-cd-bot@email.com"
+        run: git config --global user.email "github-cd-bot@email.com"
 
       - name: Bump the application version (package.json)
-      - run: npm version ${{ github.event.release.tag_name }}
+        run: npm version ${{ github.event.release.tag_name }}
 
       - name: Build application
         run: npm run build
 
       - name: Publish to NPM
-      - run: npm publish --tag ${{ github.event.release.target_commitish }}
+        run: npm publish --tag ${{ github.event.release.target_commitish }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Push the update version (package.json)
-      - run: git push
+        run: git push
         env:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-
-
-
