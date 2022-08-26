@@ -1,5 +1,5 @@
 {
-  "name": "npm-publishing",
+  "name": "@windranger-io/npm-publishing",
   "version": "0.1.0",
   "description": "A simple addition of a GitHub workflow that publishes to NPM",
   "license": "Apache Licence 2.0",
