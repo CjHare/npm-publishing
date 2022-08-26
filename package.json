@@ -1,14 +1,14 @@
 {
-  "name": "solidity-project-template",
-  "version": "0.0.3",
-  "description": "Everything you need for creating Solidity smart contract with TypeScript testing",
-  "private": true,
+  "name": "npm-publishing",
+  "version": "0.1.0",
+  "description": "A simple addition of a GitHub workflow that publishes to NPM",
+  "private": false,
   "directories": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/windranger-io/solidity-project-template"
+    "url": "git+https://github.com/CjHare/npm-publishing"
   },
   "keywords": [],
   "author": "",
