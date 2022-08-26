@@ -1,6 +1,6 @@
 {
   "name": "@windranger-io/npm-publishing",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "A simple addition of a GitHub workflow that publishes to NPM",
   "license": "Apache-2.0",
   "private": false,
