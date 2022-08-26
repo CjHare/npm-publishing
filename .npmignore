@@ -5,6 +5,10 @@ renovate.json
 slither.json
 ts.config.json
 
+# Test contracts and files
+test/
+contracts/test
+
 # Hardhat
 artifacts
 cache
