@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/CjHare/npm-publishing"
   },
+  "publishConfig": {
+    "tag": "latest"
+  },
   "keywords": [],
   "author": "",
   "scripts": {
