@@ -1,8 +1,8 @@
 {
   "name": "@windranger-io/npm-publishing",
-  "version": "0.1.0",
+  "version": "1.0.2",
   "description": "A simple addition of a GitHub workflow that publishes to NPM",
-  "license": "Apache Licence 2.0",
+  "license": "Apache-2.0",
   "private": false,
   "directories": {
     "test": "test"
@@ -13,7 +13,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "Apache-2.0",
   "scripts": {
     "build": "hardhat compile",
     "clean": "hardhat clean",
