@@ -1,14 +1,15 @@
 # Project config files
 hardhat.config.ts
-lintstagedrc
 package-lock.json
-prettierignore
-prettierrc
 renovate.json
 slither.json
-solhint.json
-solhintignore
 tsconfig.json
+*.eslintrc
+*.lintstagedrc
+*.prettierignore
+*.prettierrc
+*.solhint.json
+*.solhintignore
 
 # Test contracts and files
 test/
