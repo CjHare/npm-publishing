@@ -1,6 +1,6 @@
-# Solidity Project Template
+# NPM Publishing
 
-Providing a project with a template for the files, folder structure, dependencies, scripting, configuration (local & remote) and development standards used in a Windranger Soldity project with TypeScript tests.
+Publishing a project to Windranger NPM triggered by releasing.
 
 ---
 
@@ -51,5 +51,4 @@ npm test
 Setup and run instructions:
 
 - [Hardhat](./docs/tools/hardhat.md)
-- [PlantUML](./docs/tools/plantuml.md); UML diagram generation from code.
 - [Slither](./docs/tools/slither.md); Trail of Bits Solidity static analyzer.
