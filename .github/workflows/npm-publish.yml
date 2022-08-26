@@ -30,11 +30,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Set the publisher name
-        run: git config --global user.name "GitHub CD bot"
+      - name: Set publisher name
+        run: git config --global user.name "GitHub publish bot"
 
-      - name: Set the publisher email
-        run: git config --global user.email "github-cd-bot@email.com"
+      - name: Set publisher email
+        run: git config --global user.email "github-publish-bot@email.com"
 
       - name: Bump the application version (package.json)
         run: npm version ${{ github.event.release.tag_name }}
@@ -47,7 +47,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Push the update version (package.json)
+      - name: Push version update (package.json)
         run: git push
         env:
           github-token: ${{ secrets.GITHUB_TOKEN }}
